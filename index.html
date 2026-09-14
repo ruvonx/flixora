@@ -78,16 +78,25 @@
         }
 
         .dot {
-            width: 7px;
-            height: 7px;
-            background: #fff;
+            width: 8px;
+            height: 8px;
+            background: #00ff66; /* উজ্জ্বল নিয়ন সবুজ */
             border-radius: 50%;
-            animation: blink 0.8s infinite alternate;
+            box-shadow: 0 0 8px #00ff66;
+            animation: pulse-green 1s infinite alternate;
         }
 
-        @keyframes blink {
-            0% { opacity: 0.2; }
-            100% { opacity: 1; }
+        @keyframes pulse-green {
+            0% { 
+                opacity: 0.3;
+                transform: scale(0.8);
+                box-shadow: 0 0 2px #00ff66;
+            }
+            100% { 
+                opacity: 1;
+                transform: scale(1.15);
+                box-shadow: 0 0 10px #00ff66, 0 0 18px #00ff66;
+            }
         }
 
         .logo-box {
