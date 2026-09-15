@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>𓆩 𝙁𝙇𝙄𝙓𝙊𝙍𝘼 𓆪 - Movie & Hot Web Series</title>
+
+    <!-- Microsoft Clarity Tracking Code -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "yik3nrohlp");
+    </script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -15,7 +25,8 @@
         }
 
         body {
-            background: linear-gradient(rgba(10, 0, 5, 0.88), rgba(0, 0, 0, 0.95)), 
+            /* কোনো কালো ওভারলে নেই — সফট ব্যানার ব্যাকগ্রাউন্ড */
+            background: linear-gradient(rgba(20, 10, 15, 0.4), rgba(20, 10, 15, 0.6)), 
                         url('banner.jpg') no-repeat center center/cover;
             min-height: 100vh;
             display: flex;
@@ -25,26 +36,27 @@
             color: #fff;
         }
 
+        /* ক্লিয়ার ক্রিস্টাল গ্লাস লুক (কোনো কালো শ্যাডো নেই) */
         .visual-card {
-            background: rgba(20, 10, 15, 0.65);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 50, 80, 0.25);
+            background: rgba(25, 15, 20, 0.75);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1.5px solid rgba(255, 60, 100, 0.4);
             width: 100%;
             max-width: 440px;
-            border-radius: 24px;
+            border-radius: 26px;
             overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.95), 0 0 30px rgba(255, 30, 80, 0.2);
+            box-shadow: 0 10px 30px rgba(255, 40, 80, 0.2);
             text-align: center;
             position: relative;
         }
 
+        /* ব্যানার বক্স */
         .banner-box {
             position: relative;
             width: 100%;
             height: 180px;
             overflow: hidden;
-            background: #000;
             display: block;
         }
 
@@ -57,9 +69,10 @@
         }
 
         .banner-box:hover .banner-img {
-            transform: scale(1.04);
+            transform: scale(1.03);
         }
 
+        /* লাইভ ব্যাজ */
         .badge-live {
             position: absolute;
             top: 12px;
@@ -74,13 +87,14 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            box-shadow: 0 0 12px rgba(255, 0, 85, 0.8);
+            box-shadow: 0 0 10px rgba(255, 0, 85, 0.6);
         }
 
+        /* সবুজ একটিভ এনিমেশন ডট */
         .dot {
             width: 8px;
             height: 8px;
-            background: #00ff66; /* উজ্জ্বল নিয়ন সবুজ */
+            background: #00ff66;
             border-radius: 50%;
             box-shadow: 0 0 8px #00ff66;
             animation: pulse-green 1s infinite alternate;
@@ -88,17 +102,18 @@
 
         @keyframes pulse-green {
             0% { 
-                opacity: 0.3;
-                transform: scale(0.8);
-                box-shadow: 0 0 2px #00ff66;
+                opacity: 0.4;
+                transform: scale(0.85);
+                box-shadow: 0 0 3px #00ff66;
             }
             100% { 
                 opacity: 1;
                 transform: scale(1.15);
-                box-shadow: 0 0 10px #00ff66, 0 0 18px #00ff66;
+                box-shadow: 0 0 12px #00ff66, 0 0 18px #00ff66;
             }
         }
 
+        /* প্রোফাইল লোগো */
         .logo-box {
             margin-top: -50px;
             position: relative;
@@ -111,21 +126,22 @@
             width: 96px;
             height: 96px;
             border-radius: 50%;
-            border: 3px solid #ff2a55;
+            border: 3px solid #ff3366;
             object-fit: cover;
-            box-shadow: 0 0 25px rgba(255, 42, 85, 0.6);
-            background: #111;
+            box-shadow: 0 0 20px rgba(255, 51, 102, 0.5);
+            background: #222;
         }
 
+        /* কনটেন্ট ও টাইটেল */
         .content {
-            padding: 14px 22px 28px 22px;
+            padding: 15px 22px 28px 22px;
         }
 
         .title {
             font-size: 25px;
             font-weight: 900;
             letter-spacing: 1px;
-            background: linear-gradient(90deg, #ff3366, #ff6b6b, #ff9900);
+            background: linear-gradient(90deg, #ff3366, #ff758c, #ffae19);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-top: 6px;
@@ -133,12 +149,13 @@
 
         .subtitle {
             font-size: 13px;
-            color: #d1d1d1;
+            color: #e0e0e0;
             margin-top: 4px;
             margin-bottom: 18px;
             font-weight: 500;
         }
 
+        /* ফিচার ব্যাজ */
         .tags {
             display: flex;
             justify-content: center;
@@ -148,15 +165,16 @@
         }
 
         .tag {
-            background: rgba(255, 255, 255, 0.07);
-            border: 1px solid rgba(255, 50, 80, 0.25);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             padding: 6px 12px;
             border-radius: 10px;
             font-size: 11px;
-            color: #ffb4c2;
+            color: #ffd1dc;
             font-weight: 600;
         }
 
+        /* টেলিগ্রাম জয়েন বাটন */
         .btn-telegram {
             display: flex;
             align-items: center;
@@ -195,18 +213,20 @@
         .footer-note {
             margin-top: 14px;
             font-size: 11px;
-            color: #888;
+            color: #ccc;
         }
     </style>
 </head>
 <body>
 
     <div class="visual-card">
+        <!-- ব্যানার ছবি -->
         <a href="https://t.me/+83eAEl5u8gZlOTll" target="_blank" class="banner-box">
             <span class="badge-live"><span class="dot"></span> VIP ACCESS</span>
             <img class="banner-img" src="banner.jpg" alt="𓆩 𝙁𝙇𝙄𝙓𝙊𝙍𝘼 𓆪">
         </a>
 
+        <!-- প্রোফাইল ছবি -->
         <div class="logo-box">
             <img src="logo.jpg" alt="Flixora Logo">
         </div>
@@ -221,6 +241,7 @@
                 <span class="tag">⚡ Fast Updates</span>
             </div>
 
+            <!-- মূল টেলিগ্রাম বাটন -->
             <a href="https://t.me/+83eAEl5u8gZlOTll" class="btn-telegram" target="_blank">
                 <svg viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
